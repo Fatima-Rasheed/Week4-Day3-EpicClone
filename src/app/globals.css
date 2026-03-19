@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-epic-black: #121212;
+  --color-epic-card: #202020;
+  --color-epic-blue: #0078f2;
+  
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+@keyframes slider-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+.animate-slider-progress {
+  animation: slider-progress 2s linear forwards;
+}
+
+@layer base {
+  body {
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    font-family: var(--font-sans);
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1; 
+    letter-spacing: 0%;
+  }
+}
