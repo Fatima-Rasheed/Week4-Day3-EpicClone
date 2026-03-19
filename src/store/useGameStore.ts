@@ -41,7 +41,7 @@ const discountList: Game[] = [
   { id: 5, title: "Valorant", category: "Shooter", originalPrice: 900, discount: 10, image: "/images/valorant.jpg", isFree: false, description: "A 5v5 character-based tactical shooter..." },
   { id: 6, title: "Assassin's Creed", category: "Action", originalPrice: 3499, discount: 10, image: "/images/game.png", isFree: false, description: "Relive the high-stakes struggle of the Assassins..." },
   { id: 7, title: "Red Dead 2", category: "Action", originalPrice: 3199, discount: 50, image: "/images/redDead.png", isFree: false, description: "An epic tale of life in America's unforgiving heartland..." },
-  { id: 8, title: "Tomb Raider", category: "Action", originalPrice: 2195, discount: 20, image: "/images/tombRider.png", isFree: false, description: "Join Lara Croft on her first expedition..." },
+  { id: 8, title: "Tomb Raider", category: "Action", originalPrice: 2195, discount: 20, image: "/images/TombRider.png", isFree: false, description: "Join Lara Croft on her first expedition..." },
   { id: 9, title: "Cyberpunk", category: "Action", originalPrice: 4000, discount: 50, image: "/images/cyberpink.png", isFree: false, description: "An open-world, action-adventure story..." }
 ];
 
@@ -70,7 +70,7 @@ const topSellersList: Game[] = [
 
 const bestSellerList: Game[] = [
   { id: 25, title: "Fortnite", category:"Action", image: "/images/fort.jpg", isFree: true, description: "The ultimate battle royale experience..." },
-  { id: 26, title: "GTA V : Premier edition", originalPrice: 2499, category:"RPG", image: "/images/gta.jpg", isFree: false, description: "Explore the award-winning world of Los Santos..." },
+  { id: 26, title: "GTA V : Premier edition", originalPrice: 2499, category:"RPG", image: "/images/GTA.jpg", isFree: false, description: "Explore the award-winning world of Los Santos..." },
   { id: 27, title: "IGI 2", originalPrice: 499, category:"Royal Battle", image: "/images/igi.jpg", isFree: false, description: "A stealth-based first-person shooter..." },
   { id: 28, title: "Tomb Raider", originalPrice: 2499, category:"RPG", image: "/images/TombRider.png", isFree: false, description: "Discover the origins of Lara Croft..." },
   { id: 29, title: "Uncharted 4", originalPrice: 3499, category:"Action", image: "/images/uncharted.jpg", isFree: false, description: "Embark on a global journey..." },
