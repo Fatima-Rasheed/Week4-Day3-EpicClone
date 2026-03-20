@@ -16,7 +16,7 @@ export default function Navbar() {
             <img src="./images/logoo.png" alt="Logo" className="w-8 h-8 object-contain brightness-200" />
           </Link>
           
-          <div className="flex gap-5 text-[15px] font-normal uppercase text-gray-400 h-full">
+          <div className="flex gap-5 text-[12px] font-normal uppercase text-gray-400 h-full">
             <span className="text-white  flex items-center h-full px-1 cursor-pointer">
               STORE
             </span>
@@ -36,11 +36,11 @@ export default function Navbar() {
           {/* Sign In Section */}
           <div className="px-6 border-l border-white/10 h-full flex items-center gap-3 hover:text-white text-gray-400 cursor-pointer transition-colors">
             <img src="./images/Vector.png" alt="User" className="w-5 h-5 opacity-70" />
-            <span className="text-[15px] uppercase font-normal tracking-widest">SIGN IN</span>
+            <span className="text-[12px] uppercase font-normal tracking-widest">SIGN IN</span>
           </div>
 
           {/* Full Height Download Button */}
-          <button className="bg-epic-blue hover:bg-blue-600 text-white px-8 h-full text-[15px] font-normal uppercase transition-all">
+          <button className="bg-epic-blue hover:bg-blue-600 text-white px-8 h-full text-[12px] font-normal uppercase transition-all">
             DOWNLOAD
           </button>
         </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
 
       {/* SUB-NAV BAR (Search & Discover) */}
       <div className="bg-epic-black py-6 px-32 flex items-center gap-8 border-b border-white/5">
-        <div className="relative max-w-[240px] w-full group">
+        <div className="relative max-w-[192px] w-full group">
           <span className="absolute left-3 top-1/2 -translate-y-1/2 text-white">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -58,11 +58,11 @@ export default function Navbar() {
             type="text" 
             placeholder="Search Store" 
             onChange={(e) => searchGames(e.target.value)}
-            className="bg-[#202020] w-full rounded-full py-2.5 pl-10 pr-4 text-[15px] text-white focus:outline-none border border-transparent focus:border-white/20 transition-all"
+            className="bg-[#202020] w-full rounded-full py-2.5 pl-10 pr-4 text-[12px] text-white focus:outline-none border border-transparent focus:border-white/20 transition-all"
           />
         </div>
 
-        <div className="flex gap-8 text-[15px] font-normal text-gray-400">
+        <div className="flex gap-8 text-[12px] font-normal text-gray-400">
           <span className="text-white cursor-pointer">Discover</span>
           <span className="hover:text-white cursor-pointer transition-colors">Browse</span>
           <span className="hover:text-white cursor-pointer transition-colors">News</span>

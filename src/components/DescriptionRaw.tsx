@@ -21,12 +21,12 @@ export default function DescriptionRow({ games }: { games: Game[] }) {
 
           {/* 2. Content Section - use flex-grow to push the price to the bottom */}
           <div className="flex flex-col flex-grow gap-1.5">
-            <h4 className="font-normal text-white text-[18px] group-hover:text-gray-300 transition-colors uppercase">
+            <h4 className="font-normal text-white text-[14.4px] group-hover:text-gray-300 transition-colors uppercase">
               {game.title}
             </h4>
             
             {/* 3. Min-height ensures the box stays the same size even if text is short */}
-            <p className="text-gray-400 font-medium leading-relaxed line-clamp-3 text-[15px] min-h-[4.5em]">
+            <p className="text-gray-400 font-medium leading-relaxed line-clamp-3 text-[12px] min-h-[4.5em]">
               {game.description}
             </p>
 

@@ -30,12 +30,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 mb-16 w-fit">
           {footerLinks.map((col) => (
             <div key={col.title} className="pr-12">
-              <h3 className="text-[#E7E7E7] text-[13px] uppercase mb-4 tracking-widest">
+              <h3 className="text-[#E7E7E7] text-[10.4px] uppercase mb-4 tracking-widest">
                 {col.title}
               </h3>
               <ul className="flex flex-col gap-2">
                 {col.items.map(item => (
-                  <li key={item} className="text-white text-[15px] hover:text-[#0078f2] cursor-pointer transition-colors">
+                  <li key={item} className="text-white text-[12px] hover:text-[#0078f2] cursor-pointer transition-colors">
                     {item}
                   </li>
                 ))}
@@ -46,13 +46,13 @@ export default function Footer() {
 
         {/* Legal */}
         <div className="border-t border-white/5 pt-4">
-          <p className="mb-8 max-w-5xl text-[15px] text-[#E7E7E7] leading-loose">
+          <p className="mb-8 max-w-5xl text-[12px] text-[#E7E7E7] leading-loose">
             © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, Epic Games logo, Fortnite, Fortnite logo, Unreal, Unreal Engine, Unreal Engine logo, Unreal Tournament ) and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brand or product names are trademarks of their respective owners. Transactions outside the United States are handled through Epic Games International, S.à r.l..
           </p>
 
           {/* Bottom row — links left, Epic logo right */}
           <div className="flex items-center justify-between pt-5 mb-6">
-            <div className="flex gap-6 uppercase tracking-wider text-[15px] text-[#E7E7E7]">
+            <div className="flex gap-6 uppercase tracking-wider text-[12px] text-[#E7E7E7]">
               <span className="hover:text-white cursor-pointer">Terms of Service</span>
               <span className="hover:text-white cursor-pointer">Privacy Policy</span>
               <span className="hover:text-white cursor-pointer">Store Refund Policy</span>

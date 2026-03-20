@@ -11,11 +11,11 @@ export default function GameListColumn({ title, games }: ColumnProps) {
   const { setSelectedHero } = useGameStore();
 
   return (
-    <div className="flex-1 w-full max-w-[400px]">
+    <div className="flex-1 w-full max-w-[320px]">
       {/* Column Header */}
       <div className="flex justify-between items-center mb-6 pb-3 border-b border-white/5">
         <h2 className="text-lg font-normal text-white tracking-tight">{title}</h2>
-        <button className="text-[14px] font-normal  border border-white px-3 py-1.5 px-3 py-1.5 rounded-md hover:bg-white/10 transition-colors text-white">
+        <button className="text-[11.2px] font-normal  border border-white px-3 py-1.5 px-3 py-1.5 rounded-md hover:bg-white/10 transition-colors text-white">
           View More
         </button>
       </div>
@@ -41,7 +41,7 @@ export default function GameListColumn({ title, games }: ColumnProps) {
               <h3 className="text-base font-normal text-white truncate group-hover:text-epic-blue transition-colors">
                 {game.title}
               </h3>
-              <p className="text-[15px] font-medium text-white">
+              <p className="text-[12px] font-medium text-white">
                 {game.isFree ? "Free" : `₹${game.originalPrice?.toLocaleString() || '2,499'}`}
               </p>
             </div>

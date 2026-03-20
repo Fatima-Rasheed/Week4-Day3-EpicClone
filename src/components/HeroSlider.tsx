@@ -42,12 +42,12 @@ export default function HeroSlider({ games }: { games: Game[] }) {
                     {game.title}
                   </h2>
 
-                  <p className="text-sm text-gray-200 mb-6 max-w-[600px] leading-relaxed">
+                  <p className="text-sm text-gray-200 mb-6 max-w-[480px] leading-relaxed">
                     {game.description}
                   </p>
 
                   <Link href={`/game/${game.id}`}>
-                    <button className="bg-white text-black font-bold py-3.5 px-10 rounded-lg w-fit text-[11px] uppercase hover:bg-gray-200 transition-all active:scale-95 shadow-lg">
+                    <button className="bg-white text-black font-bold py-3.5 px-10 rounded-lg w-fit text-[8.8px] uppercase hover:bg-gray-200 transition-all active:scale-95 shadow-lg">
                       {game.isFree
                         ? 'Play for Free'
                         : game.freeUntil === 'coming soon'
@@ -64,7 +64,7 @@ export default function HeroSlider({ games }: { games: Game[] }) {
       </div>
 
       {/* RIGHT — Thumbnail List */}
-      <div className="flex flex-col gap-2 flex-1 lg:max-w-[250px]">
+      <div className="flex flex-col gap-2 flex-1 lg:max-w-[200px]">
         {games.map((game, index) => (
           <div
             key={game.id}
@@ -76,7 +76,7 @@ export default function HeroSlider({ games }: { games: Game[] }) {
               className="w-20 h-24 object-cover rounded-md shadow-md opacity-70 hover:opacity-100 transition-opacity"
               alt={game.title}
             />
-            <span className="text-[13px] font-medium text-gray-400 hover:text-white transition-colors leading-tight">
+            <span className="text-[10.4px] font-medium text-gray-400 hover:text-white transition-colors leading-tight">
               {game.title}
             </span>
           </div>

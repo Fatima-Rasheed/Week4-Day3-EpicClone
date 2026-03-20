@@ -15,7 +15,7 @@ export default function FreeGames({ games }: { games: Game[] }) {
           <h2 className="text-xl font-normal text-white">Free Games</h2>
         </div>
         
-        <button className="border border-white hover:bg-white/10 px-4 py-1.5 rounded-md text-[16px] font-normal  transition-colors text-white">
+        <button className="border border-white hover:bg-white/10 px-4 py-1.5 rounded-md text-[12.8px] font-normal  transition-colors text-white">
           view More
         </button>
       </div>
@@ -37,7 +37,7 @@ export default function FreeGames({ games }: { games: Game[] }) {
             </h3>
 
             {/* 3. Date Subtext */}
-            <p className="text-[15px] text-gray-400 font-normal uppercase tracking-tight mt-6">
+            <p className="text-[12px] text-gray-400 font-normal uppercase tracking-tight mt-6">
               {game.freeUntil || "Free Now - Jul 25"}
             </p>
           </div>

@@ -36,18 +36,18 @@ export default function GameRow({ title, games }: { title: string, games: Game[]
               <div className="flex items-center gap-2 mt-1 text-base">
                 {game.discount && (
                   <>
-                    <span className="bg-epic-blue text-white text-[15px] font-semibold px-1.5 py-0.5 rounded-sm">
+                    <span className="bg-epic-blue text-white text-[12px] font-semibold px-1.5 py-0.5 rounded-sm">
                       -{game.discount}%
                     </span>
                     {/* THE CUT MARK (Original Price) */}
-                    <span className="text-gray-500 line-through text-xs text-[15px]">
+                    <span className="text-gray-500 line-through text-xs text-[12px]">
                       ₹{game.originalPrice?.toLocaleString()}
                     </span>
                   </>
                 )}
                 
                 {/* THE FINAL PRICE */}
-                <span className="text-sm text-white font-medium text-[15px]">
+                <span className="text-sm text-white font-medium text-[12px]">
                   {game.isFree ? "Free" : `₹${salePrice?.toLocaleString()}`}
                 </span>
               </div>

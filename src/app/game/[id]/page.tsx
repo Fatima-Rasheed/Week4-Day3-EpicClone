@@ -55,7 +55,7 @@ export default function GameDetailPage() {
     <main className="bg-[#121212] min-h-screen text-white">
       <Navbar />
 
-      <div className="max-w-[1240px] mx-auto px-6 py-10">
+      <div className="max-w-[992px] mx-auto px-6 py-10">
 
         {/* Back Button */}
         <button

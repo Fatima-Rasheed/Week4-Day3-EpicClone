@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="bg-epic-black text-white min-h-screen">
       <Navbar />
-      <div className="max-w-[1240px] mx-auto px-6 py-10">
+      <div className="max-w-[992px] mx-auto px-6 py-10">
         
         {showSearchResults ? (
           /* --- SEARCH RESULTS VIEW --- */
