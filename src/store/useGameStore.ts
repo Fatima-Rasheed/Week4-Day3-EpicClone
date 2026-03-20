@@ -9,7 +9,7 @@ export interface Game {
   image: string;
   isFree?: boolean;
   description?: string;
-  freeUntil?: string; 
+  freeUntil?: string;
 }
 
 interface GameState {
@@ -17,12 +17,12 @@ interface GameState {
   discountedGames: Game[];
   featuredRow: Game[];
   freeGames: Game[];
-  games: Game[];   
+  games: Game[];
   bestSellers: Game[];
   topSellers: Game[];
-  topUpcoming: Game[]; 
+  topUpcoming: Game[];
   filteredGames: Game[];
-  selectedHero: Game | null; 
+  selectedHero: Game | null;
   setSelectedHero: (game: Game) => void;
   searchGames: (query: string) => void;
   filterByCategory: (category: string) => void;
@@ -60,28 +60,28 @@ const freeList: Game[] = [
 
 const topSellersList: Game[] = [
   { id: 20, title: "Ghostbusters: Spirits Unleashed", category: "Horror", originalPrice: 939, image: "/images/host.jpg", isFree: false, description: "An asymmetrical multiplayer game..." },
-  { id: 21, title: "GTA V : Premier edition", originalPrice: 2499, category:"RPG", image: "/images/gta.jpg", isFree: false, description: "Includes the complete story experience..." },
-  { id: 22, title: "Daysgone", originalPrice: 2699, category:"RPG", image: "/images/daysgone.jpg", isFree: false, description: "Ride and fight into a deadly, post-pandemic America..." },
-  { id: 23, title: "Last of Us", originalPrice: 1499, category:"Action", image: "/images/last.jpg", isFree: false, description: "In a ravaged civilization..." },
-  { id: 24, title: "God of War 4", originalPrice: 2659, category:"RPG", image: "/images/god_of_war.png", isFree: false, description: "Kratos must adapt to unfamiliar lands..." },
+  { id: 21, title: "GTA V : Premier edition", originalPrice: 2499, category: "RPG", image: "/images/GTA.jpg", isFree: false, description: "Includes the complete story experience..." },
+  { id: 22, title: "Daysgone", originalPrice: 2699, category: "RPG", image: "/images/daysgone.jpg", isFree: false, description: "Ride and fight into a deadly, post-pandemic America..." },
+  { id: 23, title: "Last of Us", originalPrice: 1499, category: "Action", image: "/images/last.jpg", isFree: false, description: "In a ravaged civilization..." },
+  { id: 24, title: "God of War 4", originalPrice: 2659, category: "RPG", image: "/images/god_of_war.png", isFree: false, description: "Kratos must adapt to unfamiliar lands..." },
 ];
 
 
 
 const bestSellerList: Game[] = [
-  { id: 25, title: "Fortnite", category:"Action", image: "/images/fort.jpg", isFree: true, description: "The ultimate battle royale experience..." },
-  { id: 26, title: "GTA V : Premier edition", originalPrice: 2499, category:"RPG", image: "/images/GTA.jpg", isFree: false, description: "Explore the award-winning world of Los Santos..." },
-  { id: 27, title: "IGI 2", originalPrice: 499, category:"Royal Battle", image: "/images/igi.jpg", isFree: false, description: "A stealth-based first-person shooter..." },
-  { id: 28, title: "Tomb Raider", originalPrice: 2499, category:"RPG", image: "/images/TombRider.png", isFree: false, description: "Discover the origins of Lara Croft..." },
-  { id: 29, title: "Uncharted 4", originalPrice: 3499, category:"Action", image: "/images/uncharted.jpg", isFree: false, description: "Embark on a global journey..." },
+  { id: 25, title: "Fortnite", category: "Action", image: "/images/fort.jpg", isFree: true, description: "The ultimate battle royale experience..." },
+  { id: 26, title: "GTA V : Premier edition", originalPrice: 2499, category: "RPG", image: "/images/GTA.jpg", isFree: false, description: "Explore the award-winning world of Los Santos..." },
+  { id: 27, title: "IGI 2", originalPrice: 499, category: "Royal Battle", image: "/images/igi.jpg", isFree: false, description: "A stealth-based first-person shooter..." },
+  { id: 28, title: "Tomb Raider", originalPrice: 2499, category: "RPG", image: "/images/TombRider.png", isFree: false, description: "Discover the origins of Lara Croft..." },
+  { id: 29, title: "Uncharted 4", originalPrice: 3499, category: "Action", image: "/images/uncharted.jpg", isFree: false, description: "Embark on a global journey..." },
 ];
 
 const topUpcomingList: Game[] = [
-  { id: 30, title: "Hogwarts Legacy", originalPrice: 2999, category:"Action", image: "/images/hog.jpg", isFree: false, description: "Experience Hogwarts in the 1800s..." },
-  { id: 31, title: "Uncharted Legacy of Thieves", originalPrice: 4499, category:"RPG", image: "/images/legacy.jpg", isFree: false, description: "Seek your fortune..." },
-  { id: 32, title: "Assasians Creed Mirage", originalPrice: 3499, category:"Battle", image: "/images/creed.jpg", isFree: false, description: "Experience the story of Basim..." },
-  { id: 33, title: "Last of US || ", originalPrice: 3999, category:"RPG", image: "/images/lastt.jpg", isFree: false, description: "Five years after their perilous journey..." },
-  { id: 34, title: "Dead By Daylight", category:"RPG", image: "/images/dead.jpg", freeUntil: "coming soon", description: "A multiplayer horror game..." },
+  { id: 30, title: "Hogwarts Legacy", originalPrice: 2999, category: "Action", image: "/images/hog.jpg", isFree: false, description: "Experience Hogwarts in the 1800s..." },
+  { id: 31, title: "Uncharted Legacy of Thieves", originalPrice: 4499, category: "RPG", image: "/images/legacy.jpg", isFree: false, description: "Seek your fortune..." },
+  { id: 32, title: "Assasians Creed Mirage", originalPrice: 3499, category: "Battle", image: "/images/creed.jpg", isFree: false, description: "Experience the story of Basim..." },
+  { id: 33, title: "Last of US || ", originalPrice: 3999, category: "RPG", image: "/images/lastt.jpg", isFree: false, description: "Five years after their perilous journey..." },
+  { id: 34, title: "Dead By Daylight", category: "RPG", image: "/images/dead.jpg", freeUntil: "coming soon", description: "A multiplayer horror game..." },
 ];
 
 const allGames = [...heroList, ...discountList, ...featuredList, ...freeList, ...topSellersList, ...bestSellerList, ...topUpcomingList];
@@ -100,7 +100,7 @@ export const useGameStore = create<GameState>((set) => ({
 
   setSelectedHero: (game) => set({ selectedHero: game }),
 
-  setInitialGames: () => set({ 
+  setInitialGames: () => set({
     filteredGames: allGames,
     selectedHero: heroList[0],
     heroGames: heroList,
